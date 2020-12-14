@@ -19,7 +19,7 @@ Feature: Booking functionality of Adactin 	Application
           
     
 
-
+@RegressionTest
 Scenario: Verify the user is able to SearchHotel page
     When User select the location "Brisbane" as "value" in the select location field
     And User select the Hotel "Hotel Hervey" as "value" in the select hotel field
@@ -31,7 +31,8 @@ Scenario: Verify the user is able to SearchHotel page
     And User select the children per room "4" as "value" in the select children
     And User click search button
     Then User verifies Search Hotel navigates page to Search Hotel page
-    
+  
+@SanityTest     
 Scenario: Verify the user is able to Select Hotel page
     When User makes hotel selection
     And User click continue button
